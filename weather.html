@@ -2,22 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width, initial-scale=1.0">
-    <title>Weather App </title>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styling.css"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather App</title>
+    <link rel="stylesheet" href="styling.css">
 </head>
 <body>
-    <div class="container">
-        <div class="title">
-            <p>What's The Weather?</p>
-        </div>
-        <div class= "Error Messages"></div>
-        <div class="weather-container">
-            <div class= "picsofweather">
-                <img src="pics/sunny.jpg" alt="default weather">
+    <div id="searchContainer">
+        <input class="SearchControl" type= "text" placeholder="City or Zipcode" id="searchInput">
+        <button class ="SearchControl" id="searchBtn">Search</button>
+    </div>
+    <div id= "weatherContainer">
+        <div id ="weatherDescription">
+            <h1 id="cityHeader"></h1>
+            <div id="weatherMain">
+                <div id ="temperature"></div>
+                <div id ="weatherDescriptionHeader"></div>
+                <div> <img id="documentIconImg"></div>
             </div>
         </div>
     </div>
+    <br>
+    <div id= "windSpeed" class="bottomDetails"></div>
+
+ <script src="index.js"></script>  
 </body>
 </html>
